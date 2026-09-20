@@ -50,7 +50,7 @@
 
 <img width="1407" height="140" alt="image" src="https://github.com/user-attachments/assets/24febfa0-f3db-4fdc-9f7f-7a56a6f9f4e7" />
 
-Почему не видим. пояснения:
+Почему не видим. пояснения: Мы получили два разынх результата. в одной транзакции, так как не было commit вы первой сессии.
 
 Завершу первую транзакцию с помощью commit; и снова выполню select * from shipments во второй сессии. 
 
@@ -58,13 +58,35 @@
 
 Сейчс видно запись, которую добавили в первой сессии;
 
-Почему видим. пояснения:
+Почему видим. Пояснения: Транзакция завершилась, и поэтому мы увидили запись во второй сессии;
 
 **Эксперименты с уровнем изоляции Repeatable Read**
 
 Установим другой уровень изоляции в обеих сессиях:
 
-<img width="1407" height="37" alt="image" src="https://github.com/user-attachments/assets/1250c481-a69d-464f-aa1b-d6b37bda8ff4" />
+<img width="834" height="28" alt="image" src="https://github.com/user-attachments/assets/d6110ce6-1171-49d2-a72a-caa0ba664d65" />
 
 <img width="412" height="115" alt="image" src="https://github.com/user-attachments/assets/91363740-84c7-4adb-b0f7-3d8382286d80" />
+
+Выполним в первой сессии следующее:
+
+<img width="834" height="271" alt="image" src="https://github.com/user-attachments/assets/05905179-203e-43f1-b71d-ccea49d2897c" />
+
+Видим, что в начатой транзакции запись добавлена.
+
+Выполним команду во второй сессии:
+
+<img width="834" height="181" alt="image" src="https://github.com/user-attachments/assets/10bc29d5-65d2-42e4-a002-2728c9af66a5" />
+
+Запись мы не видим;
+
+Потому что в РПР не повторяющееся чтение ....
+
+Теперь в первой мы сделаем commit, и проверим вторую сессию:
+
+<img width="834" height="181" alt="image" src="https://github.com/user-attachments/assets/0f9b1d90-f1b3-439c-8339-71e139a99399" />
+
+Мы увидели запись добавленную в первой сессии.
+
+Почему...
 
