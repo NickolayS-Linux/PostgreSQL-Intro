@@ -30,6 +30,8 @@
 
 <img width="1316" height="74" alt="image" src="https://github.com/user-attachments/assets/a04cdad0-e53b-4692-8e6b-b96dc0c0cd3b" />
 
+**Изучение уровней изоляции**
+
 Создам базу данных OTUS и подключусь к ней, а так же создам таблицу и заполню её некоторыми данными:
 
 <img width="1316" height="268" alt="image" src="https://github.com/user-attachments/assets/8e43e1cf-4f05-41d8-b476-ccbbf8993085" />
@@ -46,16 +48,23 @@
 
 Во второй сессии выполним:
 
-Во второй сесси команда не выполнилась и получили сообщение от сервера:
+<img width="1407" height="140" alt="image" src="https://github.com/user-attachments/assets/24febfa0-f3db-4fdc-9f7f-7a56a6f9f4e7" />
 
-<img width="1407" height="73" alt="image" src="https://github.com/user-attachments/assets/ca7bf35c-02b5-4a47-8e9d-97d9efbc9825" />
-
-Почему?
+Почему не видим. пояснения:
 
 Завершу первую транзакцию с помощью commit; и снова выполню select * from shipments во второй сессии. 
 
 <img width="1407" height="161" alt="image" src="https://github.com/user-attachments/assets/ac9b3668-47bf-4ec3-8790-0beeb02cd539" />
 
-Видите ли вы новую запись теперь? Объясните.
-
 Сейчс видно запись, которую добавили в первой сессии;
+
+Почему видим. пояснения:
+
+**Эксперименты с уровнем изоляции Repeatable Read**
+
+Установим другой уровень изоляции в обеих сессиях:
+
+<img width="1407" height="37" alt="image" src="https://github.com/user-attachments/assets/1250c481-a69d-464f-aa1b-d6b37bda8ff4" />
+
+<img width="412" height="115" alt="image" src="https://github.com/user-attachments/assets/91363740-84c7-4adb-b0f7-3d8382286d80" />
+
