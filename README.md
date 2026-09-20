@@ -1,1 +1,1 @@
-# PostgreSQL-Intro
+# PostgreSQL Advanced
