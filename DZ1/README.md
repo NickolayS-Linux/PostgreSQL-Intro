@@ -84,13 +84,19 @@ insert into shipments(product_name, quantity, destination) values('bananas', 200
 
 Потому что в **Repeatable Read** не повторяющееся чтение не возможно.
 
-Теперь в первой мы сделаем commit, и проверим вторую сессию:
+Теперь в первой сессии мы сделаем commit, и проверим вторую сессию:
 
-Первая сессия:
-
-<img width="834" height="174" alt="image" src="https://github.com/user-attachments/assets/cb2ffc25-9769-434d-9d7f-c1c7f9a6dacb" />
+<img width="834" height="246" alt="image" src="https://github.com/user-attachments/assets/ca717313-d14f-4d9e-87f0-825fae4224e1" />
 
 Вторая сессия:
+
+<img width="834" height="187" alt="image" src="https://github.com/user-attachments/assets/d69aae8a-b03a-4750-8012-982040360fd5" />
+
+Не видими, почему....
+
+Теперь мы сделаем во второй сесии commit, и получим записи:
+
+<img width="834" height="247" alt="image" src="https://github.com/user-attachments/assets/17132cdc-4d86-4781-8061-a0f6a950d56c" />
 
 Мы увидели запись добавленную в первой сессии.
 
