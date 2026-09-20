@@ -86,7 +86,10 @@
 
 Теперь в первой мы сделаем commit, и проверим вторую сессию:
 
-<img width="834" height="181" alt="image" src="https://github.com/user-attachments/assets/0f9b1d90-f1b3-439c-8339-71e139a99399" />
+Первая сессия:
+<img width="834" height="174" alt="image" src="https://github.com/user-attachments/assets/cb2ffc25-9769-434d-9d7f-c1c7f9a6dacb" />
+
+Вторая сессия:
 
 Мы увидели запись добавленную в первой сессии.
 
