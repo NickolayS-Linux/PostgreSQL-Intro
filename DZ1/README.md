@@ -87,6 +87,7 @@
 Теперь в первой мы сделаем commit, и проверим вторую сессию:
 
 Первая сессия:
+
 <img width="834" height="174" alt="image" src="https://github.com/user-attachments/assets/cb2ffc25-9769-434d-9d7f-c1c7f9a6dacb" />
 
 Вторая сессия:
