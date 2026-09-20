@@ -36,3 +36,26 @@
 
 Мспользуем эту таблицу для учёта перевозок бананов и кофе.
 
+Проверю текущий уровень изоляции с помощью команды:
+
+<img width="1316" height="161" alt="image" src="https://github.com/user-attachments/assets/ddced2f1-a1c1-419a-b69d-2ded44f64b2f" />
+
+В первой сесси так же переключимся на БД OTUS, и выполним следующую команду:
+
+<img width="1407" height="134" alt="image" src="https://github.com/user-attachments/assets/9fc1ae11-971c-4a63-ba62-d23534dc5a70" />
+
+Во второй сессии выполним:
+
+Во второй сесси команда не выполнилась и получили сообщение от сервера:
+
+<img width="1407" height="73" alt="image" src="https://github.com/user-attachments/assets/ca7bf35c-02b5-4a47-8e9d-97d9efbc9825" />
+
+Почему?
+
+Завершу первую транзакцию с помощью commit; и снова выполню select * from shipments во второй сессии. 
+
+<img width="1407" height="161" alt="image" src="https://github.com/user-attachments/assets/ac9b3668-47bf-4ec3-8790-0beeb02cd539" />
+
+Видите ли вы новую запись теперь? Объясните.
+
+Сейчс видно запись, которую добавили в первой сессии;
