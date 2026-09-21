@@ -1,4 +1,4 @@
-insert into shipments(product_name, quantity, destination) values('bananas', 2000, 'Africa');Выполнение домашнего задания №1. Курс Администрирование PostgreSQL. Экспертный уровень 
+
 
 Установлено: на хостовую машину Ubuntu 24.04.
 
