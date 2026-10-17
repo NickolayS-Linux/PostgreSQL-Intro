@@ -62,6 +62,6 @@
 
 <img width="685" height="62" alt="изображение" src="https://github.com/user-attachments/assets/6f9cb890-af7a-4449-8e70-258797c522e5" />
 
-<img width="810" height="436" alt="изображение" src="https://github.com/user-attachments/assets/f3e715c3-71f2-4a77-aeb5-d490cbe9bbdb" />
+<img width="810" height="385" alt="изображение" src="https://github.com/user-attachments/assets/0769f8bc-3164-4148-8599-134309dff039" />
 
 
