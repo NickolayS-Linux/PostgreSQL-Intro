@@ -34,5 +34,12 @@
 
 <img width="1107" height="57" alt="изображение" src="https://github.com/user-attachments/assets/20cedaf9-1e70-4db2-a904-22d994ff8796" />
 
-Подключимся к PG  сначала с хоста
+Подключимся к контейнеру через Docker и проверим подключенный каталог:
+
+<img width="552" height="42" alt="изображение" src="https://github.com/user-attachments/assets/507b5dc4-2556-47d2-93b7-97d2379d85d5" />
+
+Подключимся клиентом к PG хоста
+
 <img width="1107" height="310" alt="изображение" src="https://github.com/user-attachments/assets/ed793c2b-e9d3-415e-985d-e49dbaa95122" />
+
+
