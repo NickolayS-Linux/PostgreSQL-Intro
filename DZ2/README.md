@@ -22,7 +22,7 @@
 
 Пока изолированная среда не запущена, в ней нет никаких данных. Нам это не подходит, поэтому создаем Docker Postgres Volume – каталог для хранения данных:
 
-<img width="462" height="41" alt="изображение" src="https://github.com/user-attachments/assets/42e385e1-84ce-41a0-b5bc-47a3ba30daf1" />
+<img width="1107" height="24" alt="изображение" src="https://github.com/user-attachments/assets/e64b3e5e-9763-4929-878a-713f00a7bf49" />
 
 Теперь установим образ PostgreSQL из Docker Hub:
 
@@ -32,6 +32,7 @@
 
 Чтобы запустить контейнер PostgreSQL, выполним следующую команду, указав созданный ранее каталог для хранения данных:
 
+<img width="1107" height="57" alt="изображение" src="https://github.com/user-attachments/assets/20cedaf9-1e70-4db2-a904-22d994ff8796" />
 
 Подключимся к PG  сначала с хоста
 <img width="1107" height="310" alt="изображение" src="https://github.com/user-attachments/assets/ed793c2b-e9d3-415e-985d-e49dbaa95122" />
