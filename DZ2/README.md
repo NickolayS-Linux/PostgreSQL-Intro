@@ -42,4 +42,26 @@
 
 <img width="1107" height="310" alt="изображение" src="https://github.com/user-attachments/assets/ed793c2b-e9d3-415e-985d-e49dbaa95122" />
 
+Подключитесь из контейнера с клиентом к контейнеру с сервером и создайте таблицу с данными о перевозках.
+
+Но сначала создадим в Docker сеть и назовем её pg_net
+
+<img width="600" height="44" alt="изображение" src="https://github.com/user-attachments/assets/3a6d52b9-884f-415f-86c5-b47b7be79421" />
+
+Но сначала на сервере создаим еще одну БД и назовем test1
+
+<img width="685" height="189" alt="изображение" src="https://github.com/user-attachments/assets/28975f90-8f90-474a-b7b1-5874aadf43e4" />
+
+после этого как создали сеть для Docker, подключимся к серверу
+
+<img width="1052" height="336" alt="изображение" src="https://github.com/user-attachments/assets/6ec628fc-3bfb-482f-ad81-db29d266d2b3" />
+
+Клиент видит созданныую БД. Сетевая связанность работает.
+
+Теперь переключимся на БД dz2, создадим таблицу  заполним её:
+
+<img width="685" height="62" alt="изображение" src="https://github.com/user-attachments/assets/6f9cb890-af7a-4449-8e70-258797c522e5" />
+
+<img width="810" height="436" alt="изображение" src="https://github.com/user-attachments/assets/f3e715c3-71f2-4a77-aeb5-d490cbe9bbdb" />
+
 
