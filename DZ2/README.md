@@ -70,11 +70,33 @@
 
 Видим, что табица создана, и записи имеются.
 
-Удалим контейнер с сервером и создам его заново. И проверим все ли данные на месте
+Удалим контейнер с сервером и создам его заново. И проверим все ли данные на месте:
 
-<img width="1862" height="194" alt="изображение" src="https://github.com/user-attachments/assets/247b7772-117c-4d61-99e1-4f4cdb68dc92" />
+**удаляем**
 
-И проверим, что все данные на месте:
+<img width="1862" height="166" alt="изображение" src="https://github.com/user-attachments/assets/881047c4-0792-46d0-93c2-c63f2fde56a9" />
+
+**создаем**
+
+<img width="1862" height="111" alt="изображение" src="https://github.com/user-attachments/assets/6d6f3e1a-8cd7-4370-a10e-d2a5d6dffd80" />
+
+И проверим, что все данные на месте, с клиента:
+
+<img width="1862" height="295" alt="изображение" src="https://github.com/user-attachments/assets/65009d39-9813-4236-a622-f86fe6909f10" />
+
+База данных dz2 присутствует, на месте ли данные:
+
+<img width="1862" height="603" alt="изображение" src="https://github.com/user-attachments/assets/f1980055-64e6-4b72-8198-62ccfd8dd2e3" />
+
+Данные на месте.
+
+Подключимся с хоста и проверим данные:
+
+<img width="1862" height="455" alt="изображение" src="https://github.com/user-attachments/assets/8efbfc39-48d5-4610-97b1-a787d3512e63" />
+
+Данные так же присутствуют
+
+ДЗ выполнено
 
 
 
