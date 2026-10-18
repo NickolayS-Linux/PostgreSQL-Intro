@@ -64,4 +64,19 @@
 
 <img width="810" height="385" alt="изображение" src="https://github.com/user-attachments/assets/0769f8bc-3164-4148-8599-134309dff039" />
 
+Подключусь к контейнеру с сервера:
+
+<img width="810" height="442" alt="изображение" src="https://github.com/user-attachments/assets/d84fa5ac-6471-44bb-84bc-f3b5cc7cb78c" />
+
+Видим, что табица создана, и записи имеются.
+
+Удалим контейнер с сервером и создам его заново. И проверим все ли данные на месте
+
+<img width="1862" height="194" alt="изображение" src="https://github.com/user-attachments/assets/247b7772-117c-4d61-99e1-4f4cdb68dc92" />
+
+И проверим, что все данные на месте:
+
+
+
+
 
