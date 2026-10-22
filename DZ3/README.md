@@ -44,12 +44,15 @@
 конец
 <img width="1337" height="286" alt="изображение" src="https://github.com/user-attachments/assets/4dd9ab37-b4e7-45c0-937a-7e3b43926646" />
 
-Теперm создажим символическую ссылку,чтобы наш PG заработал в Docker, т.к. он изначально запускался для докумера, 
+Теперm создажим символическую ссылку,чтобы наш PG заработал в Docker, т.к. он изначально запускался для докера, 
+
 и проверим, данные которые перенесли на новый внешний диск:
 
 <img width="1337" height="138" alt="изображение" src="https://github.com/user-attachments/assets/ca2ef961-e64f-4275-8914-1d9a083e6f66" />
 
 <img width="1337" height="690" alt="изображение" src="https://github.com/user-attachments/assets/86aef0da-25ae-425a-b82e-2f9a06f085b1" />
+
+<img width="1337" height="930" alt="изображение" src="https://github.com/user-attachments/assets/767e6dd5-7fcc-4677-84af-948106b3f5ac" />
 
 Данные на месте, можно продолжать работу.
 
