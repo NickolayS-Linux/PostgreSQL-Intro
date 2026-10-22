@@ -28,4 +28,30 @@
 
 <img width="1862" height="276" alt="изображение" src="https://github.com/user-attachments/assets/e0a221b1-29e2-4961-bbcf-91e2f7bd5c60" />
 
+Посмотрим, что у нас есть в наличии:
+
+<img width="1862" height="744" alt="изображение" src="https://github.com/user-attachments/assets/40cc3b6c-7dc9-4847-ae33-40488397c248" />
+
+Данные присутствую, останавливаем postgresql, но перед этим получим текущий директорий:
+
+<img width="1337" height="134" alt="изображение" src="https://github.com/user-attachments/assets/6ac1325f-9a89-46d5-9e35-2162904fea8a" />
+
+И начинаем перенос:
+
+начало
+<img width="1337" height="286" alt="изображение" src="https://github.com/user-attachments/assets/983c15af-a376-4dcf-a56d-0fe0d957a493" />
+
+конец
+<img width="1337" height="286" alt="изображение" src="https://github.com/user-attachments/assets/4dd9ab37-b4e7-45c0-937a-7e3b43926646" />
+
+Теперm создажим символическую ссылку,чтобы наш PG заработал в Docker, т.к. он изначально запускался для докумера, 
+и проверим, данные которые перенесли на новый внешний диск:
+
+<img width="1337" height="138" alt="изображение" src="https://github.com/user-attachments/assets/ca2ef961-e64f-4275-8914-1d9a083e6f66" />
+
+<img width="1337" height="690" alt="изображение" src="https://github.com/user-attachments/assets/86aef0da-25ae-425a-b82e-2f9a06f085b1" />
+
+Данные на месте, можно продолжать работу.
+
+Спасибо за внимание. ДЗ закончено.
 
