@@ -63,4 +63,21 @@ sudo apt install postgresql patroni python3-etcd etcd-server etcd-client pgbackr
 
 <img width="1574" height="231" alt="image" src="https://github.com/user-attachments/assets/93e1b5e6-4667-4315-83f7-4afa3a8bd677" />
 
+Проверим как меняется Лидер, остановкой основного, потом второго. Запуска основного и остановку всех реплик
+
+<img width="1574" height="233" alt="image" src="https://github.com/user-attachments/assets/34e5c2a7-3b53-4eab-8e1f-a3225efdb14b" />
+
+В следующем слайде я лома плику. Потом восстанваливаю
+
+<img width="1574" height="257" alt="image" src="https://github.com/user-attachments/assets/8253986a-aae5-4f64-88f4-7d23817a7d7d" />
+
+Выключение Лидера и переключение на вторую ноду как видим задержки не большие, добавление записей продолжилось, после переключение. 
+
+Реплика стала мастером (vip-manager так же сработал корректно)
+
+<img width="1574" height="344" alt="image" src="https://github.com/user-attachments/assets/18177e57-a444-4f29-a15e-c9c7f68c390d" />
+
+<img width="1574" height="718" alt="image" src="https://github.com/user-attachments/assets/82797070-f0a1-474b-80cf-fd7b3376de67" />
+
+ДЗ выполнено
 
