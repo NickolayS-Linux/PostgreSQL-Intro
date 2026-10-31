@@ -55,7 +55,7 @@ sudo apt install postgresql patroni python3-etcd etcd-server etcd-client pgbackr
 
 <img width="1574" height="122" alt="image" src="https://github.com/user-attachments/assets/46f5a3c2-cb7a-40c2-afb9-d653ecf88e28" />
 
-Настраиваем Patroni, конифгу приложу дополнительно в личном кабинете ДЗ.
+Настраиваем Patroni, конфги приложу дополнительно в личном кабинете ДЗ.
 
 <img width="1574" height="231" alt="image" src="https://github.com/user-attachments/assets/2c2244be-98a0-460d-8fbe-53bef1b32b59" />
 
