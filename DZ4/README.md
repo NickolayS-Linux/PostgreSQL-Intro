@@ -79,5 +79,9 @@ sudo apt install postgresql patroni python3-etcd etcd-server etcd-client pgbackr
 
 <img width="1574" height="718" alt="image" src="https://github.com/user-attachments/assets/82797070-f0a1-474b-80cf-fd7b3376de67" />
 
+<img width="1574" height="635" alt="image" src="https://github.com/user-attachments/assets/d9c8828b-d557-41c7-a9bf-eb544f6d2f42" />
+
+Все записи (34) на месте )
+
 ДЗ выполнено
 
