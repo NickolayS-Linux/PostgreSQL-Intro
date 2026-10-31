@@ -38,11 +38,11 @@ sudo apt install postgresql patroni python3-etcd etcd-server etcd-client pgbackr
 
 Настраиваем etcd на Node1
 
-<img width="1574" height="272" alt="image" src="https://github.com/user-attachments/assets/3108f8db-0dd7-48c9-9964-eee2b1bcf5dc" />
+<img width="1574" height="353" alt="image" src="https://github.com/user-attachments/assets/7de4ce6d-9727-4d3c-9eea-54430be69157" />
 
 Настраиваем etcd на Node2
 
-<img width="1574" height="272" alt="image" src="https://github.com/user-attachments/assets/9d1f30db-d571-473f-b9bf-9337129f470e" />
+<img width="1574" height="355" alt="image" src="https://github.com/user-attachments/assets/926d8812-187d-4044-b1fb-c713debb9149" />
 
 Проверим:
 
