@@ -30,3 +30,23 @@ sudo apt install postgresql patroni python3-etcd etcd-server etcd-client pgbackr
 
 <img width="1574" height="424" alt="image" src="https://github.com/user-attachments/assets/a9d48bfb-3fd6-4236-9768-ee4699c08fe9" />
 
+Пакеты установлены, начинаем настройку отказоустойчивого кластера PG
+
+Настраиваем etcd на PG
+
+<img width="1574" height="275" alt="image" src="https://github.com/user-attachments/assets/b16505c6-2885-4902-9813-facdf714b51d" />
+
+Настраиваем etcd на Node1
+
+<img width="1574" height="272" alt="image" src="https://github.com/user-attachments/assets/3108f8db-0dd7-48c9-9964-eee2b1bcf5dc" />
+
+Настраиваем etcd на Node2
+
+<img width="1574" height="272" alt="image" src="https://github.com/user-attachments/assets/9d1f30db-d571-473f-b9bf-9337129f470e" />
+
+Проверим:
+
+<img width="1574" height="122" alt="image" src="https://github.com/user-attachments/assets/d250b471-4269-429b-bcde-ba0b43b48a23" />
+
+<img width="1574" height="122" alt="image" src="https://github.com/user-attachments/assets/46f5a3c2-cb7a-40c2-afb9-d653ecf88e28" />
+
