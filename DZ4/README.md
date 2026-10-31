@@ -8,8 +8,13 @@
 **
 
 Поднял 3 виртуальные машины на базе Oracle Virtual Box (Лидер, реплика, синхр. реплика), настром плавающий адрес 
+
+VIP - 192.168.9.10
+
 Лидер - 192.168.9.151
+
 Реплика -  192.168.9.210
+
 Синхрон. реплика - 192.168.9.220
 
 <img width="466" height="424" alt="image" src="https://github.com/user-attachments/assets/3b47734f-e70e-492e-a4a6-966c2cfc23e1" />
@@ -50,6 +55,12 @@ sudo apt install postgresql patroni python3-etcd etcd-server etcd-client pgbackr
 
 <img width="1574" height="122" alt="image" src="https://github.com/user-attachments/assets/46f5a3c2-cb7a-40c2-afb9-d653ecf88e28" />
 
-Настраиваем Patroni
+Настраиваем Patroni, конифгу приложу дополнительно в личном кабинете ДЗ.
+
+<img width="1574" height="231" alt="image" src="https://github.com/user-attachments/assets/2c2244be-98a0-460d-8fbe-53bef1b32b59" />
+
+Установим VIP-Manager
+
+<img width="1574" height="231" alt="image" src="https://github.com/user-attachments/assets/93e1b5e6-4667-4315-83f7-4afa3a8bd677" />
 
 
