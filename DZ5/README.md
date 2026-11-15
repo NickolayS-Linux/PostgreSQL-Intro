@@ -37,13 +37,11 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     ln -s /usr/bin/wal-g /usr/local/bin/wal-g
 
 В домашнем каталоге пользователя postgres:
-
 ```
     su - postgres
     postgres@PGWork:~$ pwd
     /var/lib/postgresql
 ```
-
 1. Создам каталог walgdata для РК данных СУБД PostgreSQL:
     ```
     mkdir walgdata
@@ -51,9 +49,9 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     <img width="1295" height="138" alt="изображение" src="https://github.com/user-attachments/assets/f78f23dd-0877-4e8f-ba3a-22260a3793f7" />
 
 2. Создам файл конфигурации .walg.json для утилиты WAL-G содержащий следующие данные:
-
-    nano .walg.json
-    ```
+   
+   nano .walg.json
+   ```
     {
         "WALG_COMPRESSION_METHOD": "brotli",
         "WALG_DELTA_MAX_STEPS": "5",
@@ -74,7 +72,7 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
     ```
 
-3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
+4. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
 
     ```
     cat >>  /var/lib/postgresql/tantor-se-16/data/postgresql.auto.conf << EOL
