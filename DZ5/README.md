@@ -55,11 +55,13 @@ mkdir walgdata
 nano .walg.json
 
 {
+
     "WALG_COMPRESSION_METHOD": "brotli",
     "WALG_DELTA_MAX_STEPS": "5",
     "WALG_FILE_PREFIX": "/var/lib/postgresql/walgdata",
     "PGDATA": "/var/lib/postgresql/tantor-se-16/data",
     "PGHOST": "/var/run/postgresql/.s.PGSQL.5432"
+    
 }
 
 <img width="1295" height="116" alt="изображение" src="https://github.com/user-attachments/assets/850ed2a8-24a3-4324-b1c1-062f8d135eb2" />
