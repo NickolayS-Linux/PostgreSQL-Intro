@@ -18,7 +18,7 @@
 
 pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
 
-Скачать и установить скачаю и установлюскаченный выше файл;
+Скачать и установить скачаю и установлю скаченный выше файл;
 
 Устанавливаем утилиту WAL-G из пакета pool_w_wal-g_wal-g_2.0.1-1_amd64.
 
@@ -74,5 +74,12 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGDATA определяет расположение каталога данных СУБД PostgreSQL /var/lib/postgresql/16/main
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
 
-3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/tantor-se-16/data/postgresql.auto.conf
-
+3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
+   
+    cat >>  /var/lib/postgresql/tantor-se-16/data/postgresql.auto.conf << EOL
+    wal_level = replica
+    archive_mode = on
+    archive_command = '/usr/bin/wal-g wal-push "%p" 2>&1 | tee -a /var/lib/postgresql/walg.log'
+    archive_timeout = 60
+    restore_command = '/usr/bin/wal-g wal-fetch \"%f\" \"%p\" 2>&1 | tee -a /var/lib/postgresql/walg.log'                                                                            
+    EOL
