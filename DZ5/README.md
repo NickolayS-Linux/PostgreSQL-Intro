@@ -56,12 +56,11 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
         "WALG_COMPRESSION_METHOD": "brotli",
         "WALG_DELTA_MAX_STEPS": "5",
         "WALG_FILE_PREFIX": "/var/lib/postgresql/walgdata",
-        "PGDATA": "/var/lib/postgresql/tantor-se-16/data",
+        "PGDATA": "/var/lib/postgresql/16/main",
         "PGHOST": "/var/run/postgresql/.s.PGSQL.5432"
     }
     ```
-    <img width="1295" height="116" alt="изображение" src="https://github.com/user-attachments/assets/850ed2a8-24a3-4324-b1c1-062f8d135eb2" />
-
+    <img width="1295" height="116" alt="изображение" src="https://github.com/user-attachments/assets/383baa13-60bf-44fe-96ec-30abae730d02" />
     ```
     Пояснения к дериктивам указанных в файле настроек:
     WALG_COMPRESSION_METHOD определяет применяемый метод сжатия данных brotli
@@ -70,7 +69,7 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGDATA определяет расположение каталога данных СУБД PostgreSQL /var/lib/postgresql/16/main
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
     ```
-3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
+4. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
     ```
     cat >>  /var/lib/postgresql/16/main/postgresql.auto.conf << EOL
     wal_level = replica
