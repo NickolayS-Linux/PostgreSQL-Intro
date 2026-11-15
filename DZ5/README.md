@@ -128,7 +128,7 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
 9. Восстанавливаю каталог данных СУБД PostgreSQL с использованием утилиты WAL-G.
 
    ```
-   wal-g backup-fetch /var/lib/postgresql/tantor-se-16/data LATEST
+   wal-g backup-fetch /var/lib/postgresql/16/main LATEST
    ```
    <img width="1295" height="148" alt="изображение" src="https://github.com/user-attachments/assets/ea66657f-ca2f-4678-be18-4f454e7581d2" />
 
@@ -149,5 +149,8 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
 12. Проверяем работу сервиса и доступ к СУБД.
 
    ```
-   sudo systemctl status postgresql.service
+   ps ax | grep postgres
    ```
+   <img width="1295" height="354" alt="изображение" src="https://github.com/user-attachments/assets/094efd64-5cca-41bc-af30-1ce381e03d50" />
+
+Домашнее задание выполнено
