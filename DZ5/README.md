@@ -137,8 +137,6 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
    ```
    touch /var/lib/postgresql/16/main/recovery.signal
    ```
-   <img width="1295" height="66" alt="изображение" src="https://github.com/user-attachments/assets/e4ae05f4-075b-40e9-a361-2e5945519fcd" />
-
 11. Запускаем  СУБД PostgreSQL и проверяем работу сервиса и доступ к СУБД.
 
    ```
