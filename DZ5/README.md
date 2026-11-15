@@ -72,7 +72,7 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     ```
 3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
     ```
-    cat >>  /var/lib/postgresql/tantor-se-16/data/postgresql.auto.conf << EOL
+    cat >>  /var/lib/postgresql/16/main/postgresql.auto.conf << EOL
     wal_level = replica
     archive_mode = on
     archive_command = '/usr/bin/wal-g wal-push "%p" 2>&1 | tee -a /var/lib/postgresql/walg.log'
