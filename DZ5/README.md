@@ -37,11 +37,11 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     ln -s /usr/bin/wal-g /usr/local/bin/wal-g
 
 В домашнем каталоге пользователя postgres:
-```
+    ```
     su - postgres
     postgres@PGWork:~$ pwd
     /var/lib/postgresql
-```
+    ```
 1. Создам каталог walgdata для РК данных СУБД PostgreSQL:
     ```
     mkdir walgdata
@@ -60,7 +60,6 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
         "PGHOST": "/var/run/postgresql/.s.PGSQL.5432"
     }
     ```
-
     <img width="1295" height="116" alt="изображение" src="https://github.com/user-attachments/assets/850ed2a8-24a3-4324-b1c1-062f8d135eb2" />
 
     ```
@@ -71,9 +70,7 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGDATA определяет расположение каталога данных СУБД PostgreSQL /var/lib/postgresql/16/main
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
     ```
-
-4. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
-
+3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
     ```
     cat >>  /var/lib/postgresql/tantor-se-16/data/postgresql.auto.conf << EOL
     wal_level = replica
