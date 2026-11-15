@@ -29,8 +29,40 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
 Выполню дополнительные действия:
 
 touch /var/lib/postgresql/walg.log /var/lib/postgresql/walg-bootstrap.log
+
 chown postgres:postgres /var/lib/postgresql/walg.log /var/lib/postgresql/walg-bootstrap.log
  
-# опционально - сделаю ссылку на бинарный файл (пути могут отличаться), разместив его в каталоге, доступном в переменной $PATH
+опционально - сделаю ссылку на бинарный файл (пути могут отличаться), разместив его в каталоге, доступном в переменной $PATH
+
 ln -s /usr/bin/wal-g /usr/local/bin/wal-g
+
+    В домашнем каталоге пользователя postgres:
+
+su - postgres
+
+postgres@PGWork:~$ pwd
+
+/var/lib/postgresql
+
+1. Создам каталог walgdata для РК данных СУБД PostgreSQL.
+
+mkdir walgdata
+
+<img width="1295" height="138" alt="изображение" src="https://github.com/user-attachments/assets/f78f23dd-0877-4e8f-ba3a-22260a3793f7" />
+
+2. Создам файл конфигурации .walg.json для утилиты WAL-G содержащий следующие данные:
+
+nano .walg.json
+
+{
+    "WALG_COMPRESSION_METHOD": "brotli",
+    "WALG_DELTA_MAX_STEPS": "5",
+    "WALG_FILE_PREFIX": "/var/lib/postgresql/walgdata",
+    "PGDATA": "/var/lib/postgresql/tantor-se-16/data",
+    "PGHOST": "/var/run/postgresql/.s.PGSQL.5432"
+}
+
+<img width="1295" height="116" alt="изображение" src="https://github.com/user-attachments/assets/850ed2a8-24a3-4324-b1c1-062f8d135eb2" />
+
+
 
