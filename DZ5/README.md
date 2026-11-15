@@ -73,7 +73,7 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
     ```
    
-3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
+3. Вносим изменения в файл конфигурации СУБД PostgreSQL /var/lib/postgresql/16/main/postgresql.auto.conf
 
     ```
     cat >>  /var/lib/postgresql/16/main/postgresql.auto.conf << EOL
@@ -105,6 +105,15 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
 
 6. Выполняем РК СУБД PostgreSQL с использованием утилиты WAL-G.
 
+   ```
+   postgres@PGWork:~$ /usr/local/bin/wal-g backup-push /var/lib/postgresql/16/main/
+   ```
+   <img width="1295" height="319" alt="изображение" src="https://github.com/user-attachments/assets/5a421b32-905d-4a33-8270-03e35a3423a5" />
 
+7. Останавливаем СУБД PostgreSQL.
+
+   ```
+   sudo systemctl stop postgresql.service
+   ```
 
    
