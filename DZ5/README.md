@@ -73,7 +73,7 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
     ```
    
-4. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
+3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
 
     ```
     cat >>  /var/lib/postgresql/16/main/postgresql.auto.conf << EOL
@@ -86,3 +86,25 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
    
     ```
     
+ 4. Перезапускаем сервис СУБД PostgreSQL для применение изменений.
+
+    ```
+    postgres@PGWork:~$ systemctl restart postgresql.service
+    ```
+    <img width="1295" height="90" alt="изображение" src="https://github.com/user-attachments/assets/b12bb8a8-bfa3-4d83-8b2a-2171bc1e1fe8" />
+
+5. Выполняем проверку каталога walgdata.
+
+   ```
+   postgres@cs-db-001:~$ wal-g backup-list
+   ```
+   <img width="1295" height="78" alt="изображение" src="https://github.com/user-attachments/assets/87b24588-4281-467b-9201-6b8177c2133d" />
+
+
+**Создание резевной копиии (РК) и восстановление из неё.**
+
+6. Выполняем РК СУБД PostgreSQL с использованием утилиты WAL-G.
+
+
+
+   
