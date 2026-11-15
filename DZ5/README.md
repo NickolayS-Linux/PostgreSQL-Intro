@@ -66,5 +66,18 @@ nano .walg.json
 
 <img width="1295" height="116" alt="изображение" src="https://github.com/user-attachments/assets/850ed2a8-24a3-4324-b1c1-062f8d135eb2" />
 
+Пояснения к дериктиам указанных в файле настроек:
 
+WALG_COMPRESSION_METHOD определяет применяемый метод сжатия данных brotli
+
+WALG_DELTA_MAX_STEPS определяет, сколько разностных резервных копий (между ранее созданной резервной копией и текущим состоянием) может быть между полными резервными копиями
+
+WALG_FILE_PREFIX определяет расположение каталога данных WAL-G /var/lib/postgresql/walgdata
+
+PGDATA определяет расположение каталога данных СУБД Тантор /var/lib/postgresql/16/main
+
+PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
+
+
+3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/tantor-se-16/data/postgresql.auto.conf
 
