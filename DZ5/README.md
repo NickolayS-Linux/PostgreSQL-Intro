@@ -75,7 +75,8 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
 
 3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
-   
+
+    ```
     cat >>  /var/lib/postgresql/tantor-se-16/data/postgresql.auto.conf << EOL
     wal_level = replica
     archive_mode = on
@@ -83,3 +84,5 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     archive_timeout = 60
     restore_command = '/usr/bin/wal-g wal-fetch \"%f\" \"%p\" 2>&1 | tee -a /var/lib/postgresql/walg.log'                                                                            
     EOL
+    ```
+    
