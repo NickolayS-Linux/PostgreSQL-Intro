@@ -63,7 +63,8 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     }
     ```
     <img width="1295" height="116" alt="изображение" src="https://github.com/user-attachments/assets/383baa13-60bf-44fe-96ec-30abae730d02" />
-    ```
+
+   ```
     Пояснения к дериктивам указанных в файле настроек:
     WALG_COMPRESSION_METHOD определяет применяемый метод сжатия данных brotli
     WALG_DELTA_MAX_STEPS определяет, сколько разностных резервных копий (между ранее созданной резервной копией и текущим состоянием) может быть между полными резервными копиями
@@ -71,7 +72,8 @@ pool_w_wal-g_wal-g_2.0.1-1_amd64.deb
     PGDATA определяет расположение каталога данных СУБД PostgreSQL /var/lib/postgresql/16/main
     PGHOST определяет расположение информационного файла сервиса СУБД PostgreSQL
     ```
-3. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
+   
+4. Вносим изменения в файл конфигурации СУБД Тантор /var/lib/postgresql/16/main/postgresql.auto.conf
 
     ```
     cat >>  /var/lib/postgresql/16/main/postgresql.auto.conf << EOL
