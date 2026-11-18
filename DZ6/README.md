@@ -19,5 +19,7 @@
 
 <img width="1295" height="188" alt="изображение" src="https://github.com/user-attachments/assets/474d24e1-b527-45ac-ba01-37e0f46fe132" />
 
-Запустим его с параметрами установленными по умолчанию в конфигурации PostgreSQL
+Запустим его с параметрами установленными по умолчанию в конфигурации PostgreSQL:
+
+<img width="1295" height="256" alt="изображение" src="https://github.com/user-attachments/assets/62ecfc4b-a06c-4490-bfff-fd9419666712" />
 
